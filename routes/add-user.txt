@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta http-equiv="content-type" content="text/html; charset=euc-kr"/>
+    <title>MiniQ Corp</title>
+    <link href="/css/common.css" rel="stylesheet" type="text/css">
+
+    <style>
+
+
+      body{ background-color: #F7FFF5;
+     background-image:url('./imgs/background.jpg');
+    background-size : cover;
+    background-repeat: no-repeat;
+   background-attachment : fixed;
+}
+
+      img.absolute { 
+        position: absolute;
+        left: 10px;
+        top: 10px;
+      }
+
+#menu1{
+        position: absolute;
+        left: 300px;
+        top: 0px;
+	width : 250px;
+	height:60px;
+}
+#menu2{
+        position: absolute;
+        left: 600px;
+        top: 0px;
+	width : 250px;
+	height:60px;
+}
+#menu3{
+        position: absolute;
+        left: 900px;
+        top: 0px;
+	width : 250px;
+	height:60px;
+}
+#menu4{
+        position: absolute;
+        left: 1200px;
+        top: 0px;
+	width : 250px;
+	height:60px;
+}
+#menu5{
+        position: absolute;
+        left: 1500px;
+        top: 0px;
+	width : 250px;
+	height:60px;
+}
+
+
+ul#type1 {
+position:absolute;
+left:-30px;
+top:215px;
+list-style:disc;
+}
+
+.invisible{
+clear:none;
+font-size:15px;
+border:0px none;
+float:none;
+color:white;
+background-color:transparent;
+display:inline;
+width:130px;
+background-color: #787878;
+color: #fff;
+text-align:left;
+}
+.invisible:hover {
+	background-color: #595959;
+}
+
+    #rectangle {
+      width: 160px;
+      height: 100px;
+      background: gray;
+	position:absolute;
+	top:100px;
+	left:10px;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   border-bottom-right-radius: 10px;
+   border-bottom-left-radius: 10px;
+font-size : 13px;
+text-align:center;
+    }
+
+    #timestamp {
+      width: 810px;
+      height: 815px;
+      background: white;
+	position:absolute;
+	top:200px;
+	left:550px;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   border-bottom-right-radius: 10px;
+   border-bottom-left-radius: 10px;
+font-size : 13px;
+text-align:center;
+    }
+#notice{
+  width: 450px;
+      height: 300px;
+      background: white;
+	position:absolute;
+	top:1050px;
+	left:500px;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   border-bottom-right-radius: 10px;
+   border-bottom-left-radius: 10px;
+font-size : 13px;
+text-align:center;
+}
+
+#notice{
+  width: 450px;
+      height: 300px;
+      background: gray;
+	position:absolute;
+	top:1050px;
+	left:475px;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   border-bottom-right-radius: 10px;
+   border-bottom-left-radius: 10px;
+font-size : 13px;
+text-align:center;
+}
+#check{
+  width: 450px;
+      height: 300px;
+      background: gray;
+	position:absolute;
+	top:1050px;
+	left:975px;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   border-bottom-right-radius: 10px;
+   border-bottom-left-radius: 10px;
+font-size : 13px;
+text-align:center;
+}
+#noticename{
+width: 450px;
+height: 300px;
+background: gray;
+position:absolute;
+top:1050px;
+left:475px;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+border-bottom-left-radius: 10px;
+font-size : 20px;
+text-align:center;
+}
+
+#checkname{
+width: 450px;
+height: 300px;
+background: gray;
+position:absolute;
+top:1050px;
+left:975px;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+border-bottom-left-radius: 10px;
+font-size : 20px;
+text-align:center;
+}
+
+#login{
+width:140px;
+height:25x;
+font-size:13px;
+position:absolute;
+top:160px;
+left:20px;
+display:inline;
+}
+
+
+#time1{
+position:absolute; left:555px; top:205px; font-size : 12px; text-align:center;width: 160px;height: 100px;background: gray;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;
+}
+#time2{
+position:absolute; left:715px; top:205px; font-size : 12px; text-align:center;width: 160px;height: 100px;background: gray;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;
+}
+#time3{
+position:absolute; left:875px; top:205px; font-size : 12px; text-align:center;width: 160px;height: 100px;background: gray;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;
+}
+#time4{
+position:absolute; left:1035px; top:205px; font-size : 12px; text-align:center;width: 160px;height: 100px;background: gray;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;
+}
+#time5{
+position:absolute; left:1195px; top:205px; font-size : 12px; text-align:center;width: 160px;height: 100px;background: gray;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;
+}
+
+#time6{
+position:absolute; left:555px; top:305px; font-size : 12px; text-align:center;width: 160px;height: 100px;background: gray;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;
+}
+#time7{
+position:absolute; left:715px; top:305px; font-size : 12px; text-align:center;width: 160px;height: 100px;background: gray;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;
+}
+#time8{
+position:absolute; left:875px; top:305px; font-size : 12px; text-align:center;width: 160px;height: 100px;background: gray;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;
+}
+#time9{
+position:absolute; left:1035px; top:305px; font-size : 12px; text-align:center;width: 160px;height: 100px;background: gray;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;
+}
+#time10{
+position:absolute; left:1195px; top:305px; font-size : 12px; text-align:center;width: 160px;height: 100px;background: gray;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;
+}
+
+#time11{
+position:absolute; left:555px; top:405px; font-size : 12px; text-align:center;width: 160px;height: 100px;background: gray;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;
+}
+#time12{
+position:absolute; left:715px; top:405px; font-size : 12px; text-align:center;width: 160px;height: 100px;background: gray;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;
+}
+#time13{
+position:absolute; left:875px; top:405px; font-size : 12px; text-align:center;width: 160px;height: 100px;background: gray;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;
+}
+#time14{
+position:absolute; left:1035px; top:405px; font-size : 12px; text-align:center;width: 160px;height: 100px;background: gray;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;
+}
+#time15{
+position:absolute; left:1195px; top:405px; font-size : 12px; text-align:center;width: 160px;height: 100px;background: gray;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;
+}
+
+#time16{
+position:absolute; left:555px; top:505px; font-size : 12px; text-align:center;width: 160px;height: 100px;background: gray;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;
+}
+#time17{
+position:absolute; left:715px; top:505px; font-size : 12px; text-align:center;width: 160px;height: 100px;background: gray;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;
+}
+#time18{
+position:absolute; left:875px; top:505px; font-size : 12px; text-align:center;width: 160px;height: 100px;background: gray;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;
+}
+#time19{
+position:absolute; left:1035px; top:505px; font-size : 12px; text-align:center;width: 160px;height: 100px;background: gray;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;
+}
+#time20{
+position:absolute; left:1195px; top:505px; font-size : 12px; text-align:center;width: 160px;height: 100px;background: gray;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;
+}
+
+#time21{
+position:absolute; left:555px; top:605px; font-size : 12px; text-align:center;width: 160px;height: 100px;background: gray;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;
+}
+#time22{
+position:absolute; left:715px; top:605px; font-size : 12px; text-align:center;width: 160px;height: 100px;background: gray;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;
+}
+#time23{
+position:absolute; left:875px; top:605px; font-size : 12px; text-align:center;width: 160px;height: 100px;background: gray;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;
+}
+#time24{
+position:absolute; left:1035px; top:605px; font-size : 12px; text-align:center;width: 160px;height: 100px;background: gray;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;
+}
+#time25{
+position:absolute; left:1195px; top:605px; font-size : 12px; text-align:center;width: 160px;height: 100px;background: gray;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;
+}
+
+#time26{
+position:absolute; left:555px; top:705px; font-size : 12px; text-align:center;width: 160px;height: 100px;background: gray;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;
+}
+#time27{
+position:absolute; left:715px; top:705px; font-size : 12px; text-align:center;width: 160px;height: 100px;background: gray;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;
+}
+#time28{
+position:absolute; left:875px; top:705px; font-size : 12px; text-align:center;width: 160px;height: 100px;background: gray;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;
+}
+#time29{
+position:absolute; left:1035px; top:705px; font-size : 12px; text-align:center;width: 160px;height: 100px;background: gray;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;
+}
+#time30{
+position:absolute; left:1195px; top:705px; font-size : 12px; text-align:center;width: 160px;height: 100px;background: gray;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;
+}
+
+#time31{
+position:absolute; left:555px; top:805px; font-size : 12px; text-align:center;width: 160px;height: 100px;background: gray;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;
+}
+#time32{
+position:absolute; left:715px; top:805px; font-size : 12px; text-align:center;width: 160px;height: 100px;background: gray;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;
+}
+#time33{
+position:absolute; left:875px; top:805px; font-size : 12px; text-align:center;width: 160px;height: 100px;background: gray;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;
+}
+#time34{
+position:absolute; left:1035px; top:805px; font-size : 12px; text-align:center;width: 160px;height: 100px;background: gray;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;
+}
+#time35{
+position:absolute; left:1195px; top:805px; font-size : 12px; text-align:center;width: 160px;height: 100px;background: gray;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;
+}
+
+#time36{
+position:absolute; left:555px; top:905px; font-size : 12px; text-align:center;width: 160px;height: 100px;background: gray;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;
+}
+#time37{
+position:absolute; left:715px; top:905px; font-size : 12px; text-align:center;width: 160px;height: 100px;background: gray;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;
+}
+#time38{
+position:absolute; left:875px; top:905px; font-size : 12px; text-align:center;width: 160px;height: 100px;background: gray;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;
+}
+#time39{
+position:absolute; left:1035px; top:905px; font-size : 12px; text-align:center;width: 160px;height: 100px;background: gray;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;
+}
+#time40{
+position:absolute; left:1195px; top:905px; font-size : 12px; text-align:center;width: 160px;height: 100px;background: gray;border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;
+}
+    </style>
+
+
+  </head>
+
+
+  <body>
+
+
+
+
+
+
+
+
+  <div>
+    <img id="메인"src="./imgs/miniq.jpg" class="absolute" onclick="location.href='/screen'">
+  </div>
+
+<button id = "menu1" class="snip1535">학교 소개</button>
+<button id = "menu2" class="snip1535">학부 소개</button>
+<button id = "menu3" class="snip1535">교수 정보</button>
+<button id = "menu4" class="snip1535">등록금납부안내</button>
+<button id = "menu5" class="snip1535">찾아오는 길</button>
+
+<div> 
+<text id="rectangle"></br>2014722024(김진용)님</br>환영합니다</text>
+</div>
+
+<button id="login">로그아웃</button> 
+
+<ul id="type1">
+<div class="accordion">
+    <section class="accordion-item accordion--default">
+        <h3>개인정보</h3>
+        <div class="accordion-item-content">
+          <button class="invisible">성적조회</button>
+	</br>
+	<button class="invisible">출석조회</button>
+	</br>
+	<button class="invisible">개인정보수정</button>
+        </div>
+    </section>
+
+    <section class="accordion-item">
+    <h3 onclick="location.href='/screen/123'">수강신청</h3>
+    </section>
+
+    <section  class="accordion-item">
+          <h3>게시판</h3>
+        <div class="accordion-item-content">
+             <button class="invisible">과목별 공지사항</button>
+	</br>
+	<button class="invisible">자유게시판</button>
+	</br>
+	<button class="invisible">평가게시판</button>
+        </div>
+    </section>
+</ul>
+
+<text id="timestamp" ></text>
+<div class="dropdown">
+  <button class="dropbtn">1학년 1학기</button>
+  <div class="dropdown-content">
+    <a href="#" style="visibility:delete;" >1학년 2학기</a>
+    <a href="#" >2학년 1학기</a>
+    <a href="#">2학년 2학기</a>
+    <a href="#">3학년 1학기</a>
+    <a href="#" >3학년 2학기</a>
+    <a href="#">4학년 1학기</a>
+    <a href="#">4학년 2학기</a>
+  </div>
+</div>
+
+
+
+<div class="time"> 
+<button id="time1" style="visibility:hidden;">123</button>
+<button id="time2">123</button>
+<button id="time3">123</button>
+<button id="time4">123</button>
+<button id="time5">123</button>
+<button id="time6">123</button>
+<button id="time7">123</button>
+<button id="time8">123</button>
+<button id="time9">123</button>
+<button id="time10">123</button>
+<button id="time11">123</button>
+<button id="time12">123</button>
+<button id="time13">123</button>
+<button id="time14">123</button>
+<button id="time15">123</button>
+<button id="time16">123</button>
+<button id="time17">123</button>
+<button id="time18">123</button>
+<button id="time19">123</button>
+<button id="time20">123</button>
+<button id="time21">123</button>
+<button id="time22">123</button>
+<button id="time23">123</button>
+<button id="time24">123</button>
+<button id="time25">123</button>
+<button id="time26">123</button>
+<button id="time27">123</button>
+<button id="time28">123</button>
+<button id="time29">123</button>
+<button id="time30">123</button>
+<button id="time31">123</button>
+<button id="time32">123</button>
+<button id="time33">123</button>
+<button id="time34">123</button>
+<button id="time35">123</button>
+<button id="time36">123</button>
+<button id="time37">123</button>
+<button id="time38">123</button>
+<button id="time39">123</button>
+<button id="time40">123</button>
+</div>
+  </body>
+
+<text id="notice" ></text>
+<text id="check" ></text>
+<text id="noticename" ><b>과목별 공지사항</b></text>
+<text id="checkname" ><b>출석체크</b></text>
+</html>
+
+
